@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main {
+  display: flex;
+}
+
+/* Regole NavBar sinistra */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  background-color: black;
+  height: 100vh;
+}
+
+.sidebar-top {
+  flex-grow: 1;
+  background: #000;
+  padding: 15px 0;
+}
+
+.sidebar-bottom {
+  padding-left: 20px
+}
+
+.logo-spoti img {
+  width: 170px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.visible-sm {
+  display: block;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+.home img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.home ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #747474;
+  align-items: center;
+}
+
+.home ul li a:hover {
+  color: white;
+}
+
+.home ul li:hover {
+  border-left: 3px solid #C8FF00
+}
+
+.home ul li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 3px solid transparent;
+}
+
+.home h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  color: white;
+}
+
+.home ul,
+.content-menu ul {
+  list-style: none;
+}
+
+.playlist ul li a {
+  padding: 5px 0;
+}
+
+.playlist .fa-plus-square {
+  font-size: 30px;
+  width: 40px;
+}
+
+/* Bottom SideBar */
+.sidebar-bottom {
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.download {
+  border-bottom: 1px solid #747474;
+  padding-bottom: 10px;
+}
+
+.sidebar-bottom .download i {
+  font-size: 16px;
+  color: #747474;
+}
+
+.sidebar-bottom .download a {
+  text-decoration: none;
+  color: #747474;
+}
+
+.john {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.john a img {
+  width: 20px;
+}
+
+.john a {
+  text-decoration: none;
+}
+
+.john a span {
+  color: white;
+  padding-left: 10px;
+}
+
+.john a img {
+  background-color: grey;
+  border-radius: 100%;
+  width: 30px;
+  padding: 3px;
+}
