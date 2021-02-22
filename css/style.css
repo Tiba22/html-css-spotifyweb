@@ -150,7 +150,7 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   text-align: right;
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 .content-top-bar a {
@@ -173,4 +173,118 @@
   position: relative;
   flex-grow: 1;
   background-color: #141921;
+}
+
+#content .scrollable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 90px 15px 30px;
+}
+
+.content-menu {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.content-menu ul li {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+
+.content-menu ul li a {
+  text-decoration: none;
+  color: #747474;
+  padding: 0 7px;
+}
+
+.content-menu ul li a:hover {
+  color: white;
+}
+
+.content-menu ul li a:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+
+.content-menu ul li a:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  color: white;
+  border-bottom: 2px solid #C8FF00;
+}
+
+/* Parte Album */
+
+.content-category h6 {
+  color: #747474;
+  font-size: 10px;
+  padding-top: 15px;
+}
+
+.content-category h2,h5 {
+  color: white;
+}
+
+.cover {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album {
+  flex-basis: calc(100% / 6);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 0;
+}
+
+.album img {
+  max-width: 100%;
+  display: block;
+}
+
+.album h5 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.img-hover {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay i {
+  color: white;
+  font-size: 40px;
+  display: none;
+}
+
+.img-hover:hover .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.img-hover:hover .overlay i {
+  display: block;
 }
