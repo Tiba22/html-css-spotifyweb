@@ -10,250 +10,240 @@
 </head>
 
 <body>
-  <div id="main">
+  <div id="app">
 
-    <!-- Sidebar sx -->
-    <aside id="sidebar">
-      <div class="sidebar-top">
-        <div class="logo-spoti">
-          <img class="visible-sm" src="img/logo.svg" alt="logo">
-          <img class="hidden-sm" src="img/logo-small.svg" alt="mini-logo">
+    <!-- Main content -->
+    <main id="main-window">
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-top">
+          <div class="logo-spoti">
+            <img class="visible-sm" src="img/logo.svg" alt="logo">
+            <img class="hidden-sm" src="img/logo-small.svg" alt="mini-logo">
+          </div>
+          <div class="home">
+            <ul class="navigation">
+              <li>
+                <a class="navigation-link" href="#"><img src="img/home.svg" alt="home"> <span>Home</span></a>
+              </li>
+              <li><a class="navigation-link" href="#"><img src="img/search.svg" alt="cerca"> <span>Cerca</span></a></li>
+              <li><a class="navigation-link" href="#"><img src="img/libreria.svg" alt="home"> <span>La tua Libreria</span></a></li>
+            </ul>
+            <div class="playlist">
+              <h5>PLAYLIST</h5>
+              <ul>
+                <li>
+                  <a class="navigation-link" href="#"><i class="fas fa-plus-square"></i>Crea Playlist</a>
+                </li>
+                <li><a class="navigation-link" href="#">This Is Falling in Reverse</a></li>
+                <li><a class="navigation-link" href="#">This Is A Day to Remember</a></li>
+                <li><a class="navigation-link" href="#">This Is Ice Nine Kills</a></li>
+                <li><a class="navigation-link" href="#">Daily Mix 1</a></li>
+                <li><a class="navigation-link" href="#">Daily Mix 2</a></li>
+                <li><a class="navigation-link" href="#">This Is I Prevail</a></li>
+                <li><a class="navigation-link" href="#">This Is Bring Me The Horizon</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="sidebar-bottom">
+          <div class="download">
+            <a class="navigation-link" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+            <a class="navigation-link" href="#"> <span>Installa app</span> </a>
+          </div>
+          <div class="john">
+            <a class="navigation-link" href="#"><img src="img/profile.svg" alt="profile"> <span>Tiba</span> </a>
+          </div>
+        </div>
+      </aside>
 
-        <div class="home">
-          <ul class="navigation">
-            <li>
-              <a class="navigation-link" href="#"><img src="img/home.svg" alt="home"><span>Home</span></a>
-            </li>
-            <li><a class="navigation-link" href="#"><img src="img/search.svg" alt="cerca"><span>Cerca</span></a></li>
-            <li><a class="navigation-link" href="#"><img src="img/libreria.svg" alt="home"><span>La tua Libreria</span></a></li>
-          </ul>
-          <div class="playlist">
-            <h4>PLAYLIST</h4>
+      <!-- Content -->
+      <div id="content">
+        <div class="content-top-bar">
+          <a href="#">EFFETTUA L'UPGRADE</a>
+        </div>
+        <div class="scrollable">
+          <nav class="content-menu">
             <ul>
               <li>
-                <a class="navigation-link" href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a>
+                <a href="#">In Evidenza</a>
               </li>
-              <li><a class="navigation-link" href="#">This Is Falling in Reverse</a></li>
-              <li><a class="navigation-link" href="#">This Is A Day to Remember</a></li>
-              <li><a class="navigation-link" href="#">This Is Ice Nine Kills</a></li>
-              <li><a class="navigation-link" href="#">Daily Mix 1</a></li>
-              <li><a class="navigation-link" href="#">Daily Mix 2</a></li>
-              <li><a class="navigation-link" href="#">This Is I Prevail</a></li>
-              <li><a class="navigation-link" href="#">This Is Bring Me The Horizon</a></li>
+              <li>
+                <a href="#">Podcast</a>
+              </li>
+              <li>
+                <a href="#">Classifiche</a>
+              </li>
+              <li>
+                <a href="#">Generi e Mood</a>
+              </li>
+              <li>
+                <a href="#">Nuove Uscite</a>
+              </li>
+              <li>
+                <a href="#">Scopri</a>
+              </li>
             </ul>
-          </div>
+          </nav>
+          <section class="content-category">
+            <h2>Recently played</h2>
+            <div class="cover">
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/metal_lifting.jpg" alt="metal">
+                </div>
+                <h5>Heavy Metal</h5>
+                <h6>Subtitle</h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/stranger.jpeg" alt="stranger">
+                </div>
+                <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h5>
+                <h6>Kyle Dixon &amp; Michael Stein</h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/aquietplace.jpeg" alt="quiet">
+                </div>
+                <h5>A Quiet Place</h5>
+                <h6>Subtitle</h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/split.jpeg" alt="split">
+                </div>
+                <h5>Split</h5>
+                <h6>Subtitle</h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/cure.jpeg" alt="cure">
+                </div>
+                <h5>A Cure For Wellness</h5>
+                <h6>Subtitle</h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/sinister.jpeg" alt="sinister">
+                </div>
+                <h5>Sinister</h5>
+                <h6>Subtitle</h6>
+              </div>
+            </div>
+          </section>
+          <section class="content-category">
+            <h2>Creato per Tiba</h2>
+            <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+            <div class="cover">
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/radar.jpeg" alt="metal">
+                </div>
+                <h5>Release Radar</h5>
+                <h6></h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/mixdaily.jpeg" alt="stranger">
+                </div>
+                <h5>Daily Mix 1</h5>
+              </div>
+            </div>
+          </section>
+          <section class="content-category">
+            <h2>Artisti più popolari</h2>
+            <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+            <div class="cover">
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/young.jpeg" alt="young">
+                </div>
+                <h5>Lana del Rey</h5>
+                <h6></h6>
+              </div>
+              <div class="album">
+                <div class="img-hover">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <img src="img/einaudi.jpeg" alt="stranger">
+                </div>
+                <h5>Ludovico Einaudi</h5>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <!-- SideSx sotto -->
-      <div class="sidebar-bottom">
-        <div class="download">
-          <a class="installapp" href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
-        </div>
-        <div class="john">
-          <a class="navigation-link" href="#"><img src="img/profile.svg" alt="profile"> <span>Tiba</span> </a>
-        </div>
-      </div>
-    </aside>
+    </main>
 
-    <!-- Sezione Album -->
-    <div id="content">
-      <div class="content-top-bar">
-        <a href="#">EFFETTUA L'UPGRADE</a>
+    <!-- Bottom Player -->
+    <footer id="player">
+      <div class="song">
+        <img src="img/sinister.jpeg" alt="sinist">
+        <div class="text">
+          <h5>Sinister</h5>
+          <h6>Nome Cognome</h6>
+        </div>
+        <div class="btn-spoti">
+          <a href="#"><i class="far fa-heart"></i></a>
+          <a href="#"><i class="far fa-folder"></i></a>
+        </div>
       </div>
-      <div class="scrollable">
-        <!-- Link nav -->
-        <nav class="content-menu">
+      <div class="play">
+        <div class="icons">
           <ul>
-            <li>
-              <a href="#">In Evidenza</a>
-            </li>
-            <li>
-              <a href="#">Podcast</a>
-            </li>
-            <li>
-              <a href="#">Classifiche</a>
-            </li>
-            <li>
-              <a href="#">Generi e Mood</a>
-            </li>
-            <li>
-              <a href="#">Nuove Uscite</a>
-            </li>
-            <li>
-              <a href="#">Scopri</a>
-            </li>
+            <li><a href="#"><i class="fas fa-random"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-backward"></a></i></li>
+            <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+            <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
           </ul>
-        </nav>
-        <!-- Recently Played -->
-        <section class="content-category">
-          <h2>Recently played</h2>
-          <div class="cover">
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/metal_lifting.jpg" alt="metal">
-              </div>
-              <h5>Heavy Metal</h5>
-              <h6>Subtitle</h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/stranger.jpeg" alt="stranger">
-              </div>
-              <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack</h5>
-              <h6>Kyle Dixon &amp; Michael Stein</h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/aquietplace.jpeg" alt="quiet">
-              </div>
-              <h5>A quiet place</h5>
-              <h6>Subtitle</h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/split.jpeg" alt="split">
-              </div>
-              <h5>Split</h5>
-              <h6>Subtitle</h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/cure.jpeg" alt="cure">
-              </div>
-              <h5>A cure for wellness</h5>
-              <h6>Subtitle</h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/sinister.jpeg" alt="sinister">
-              </div>
-              <h5>Sinister</h5>
-              <h6>Subtitle</h6>
-            </div>
+        </div>
+        <div class="player-bar">
+          <div> <span>2:25</span> </div>
+          <div class="line">
           </div>
-        </section>
-        <!-- Creato per Utente -->
-        <section class="content-category">
-          <h2>Creato per Tiba</h2>
-          <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
-          <div class="cover">
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/radar.jpeg" alt="metal">
-              </div>
-              <h5>Release Radar</h5>
-              <h6></h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/mixdaily.jpeg" alt="stranger">
-              </div>
-              <h5>Daily Mix 1</h5>
-            </div>
-          </div>
-        </section>
-        <!-- Artisti più popolari -->
-        <section class="content-category">
-          <h2>Artisti più popolari</h2>
-          <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
-          <div class="cover">
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/young.jpeg" alt="young">
-              </div>
-              <h5>Lana del Rey</h5>
-              <h6></h6>
-            </div>
-            <div class="album">
-              <div class="img-hover">
-                <div class="overlay">
-                  <i class="far fa-play-circle"></i>
-                </div>
-                <img src="img/einaudi.jpeg" alt="stranger">
-              </div>
-              <h5>Ludovico Einaudi</h5>
-            </div>
-          </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div> <span>4:30</span> </div>
+        </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-  </div> <!-- Fine div MAIN -->
+      <div class="settings">
+        <div class="buttons-settings">
+          <a href="#"><i class="fas fa-list"></i></a>
+          <a href="#"><i class="fas fa-desktop"></i></a>
+        </div>
+          <a href="#"><i class="fas fa-volume-up"></i></a>
+          <div class="line line-inline"></div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

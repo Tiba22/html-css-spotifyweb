@@ -5,8 +5,28 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#main {
+#app {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main-window {
+  flex: 1;
+  display: flex;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141921;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
 }
 
 /* Regole NavBar sinistra */
@@ -14,19 +34,22 @@
 #sidebar {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: auto;
+  padding-right: 15px;
   background-color: black;
-  height: 100vh;
+  height: calc(100vh - 90px);
+  overflow: auto;
 }
 
 .sidebar-top {
   flex-grow: 1;
   background: #000;
-  padding: 15px 0;
+  padding-top: 15px;
 }
 
 .sidebar-bottom {
-  padding-left: 20px
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo-spoti img {
@@ -81,6 +104,10 @@
   list-style: none;
 }
 
+.playlist h5 {
+  padding: 10px 15px;
+}
+
 .playlist ul li a {
   padding: 5px 0;
 }
@@ -98,7 +125,6 @@
 /* Bottom SideBar */
 
 .sidebar-bottom {
-  justify-content: flex-end;
   padding-bottom: 20px;
 }
 
@@ -287,4 +313,233 @@
 
 .img-hover:hover .overlay i {
   display: block;
+}
+
+/* Regole Footer Player */
+
+#player {
+  background: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+}
+
+.song img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.song h6 {
+  color: #C0C0C0;
+  padding-top: 5px;
+}
+
+.text {
+  margin-right: 30px;
+}
+
+.btn-spoti a {
+  margin-right: 10px;
+  color: #747474;
+}
+
+.btn-spoti a:hover {
+  color: white;
+}
+
+.icons li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.icons .fa-play-circle{
+  font-size: 30px;
+}
+
+.player-bar {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.player-bar span {
+  padding: 0 15px;
+  color: #C0C0C0;
+}
+
+.play {
+  flex-basis: 600px;
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  background-color: grey;
+  height: 3px;
+  flex-grow: 1;
+  min-width: 25px;
+}
+
+.line:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: white;
+}
+
+.player-bar:hover .line:before,
+.settings:hover .line:before {
+  content: '';
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.buttons-settings  {
+  display: flex;
+}
+
+.settings i {
+  color: white;
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-sm img {
+  width: 10px;
+}
+
+.line.line-inline {
+  width: 100px;
+}
+
+/* Media Queries */
+@media all and (max-width: 1200px) {
+  .album {
+    flex-basis: calc(100% / 4);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 0;
+  }
+
+  .hidden-sm  {
+    display: none;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+  #sidebar {
+    width: 90px;
+    padding: 0;
+  }
+
+  .logo-spoti img {
+    width: 70px;
+    margin-left: 10px;
+  }
+
+  .home ul li {
+    padding-left: 28px;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .hidden-sm  {
+    display: block;
+  }
+
+  .visible-sm {
+    display: none;
+  }
+
+  .sidebar-bottom .download i {
+    padding-left: 17px;
+  }
+
+  .john a {
+    padding-left: 10px;
+  }
+
+  .album {
+    flex-basis: calc(100% / 2);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 0;
+  }
+
+  .navigation-link span {
+    display: none;
+  }
+
+  .content-menu {
+    text-align: center;
+    padding-top: 30px;
+    margin-right: 20px;
+  }
+
+  .play {
+    padding: 0 20px;
+  }
+
+  #player .song img {
+    display: none;
+  }
+
+  #player .play .icons li i {
+    font-size: 17px;
+  }
+
+  #player .play .icons li .fa-play-circle {
+    font-size: 25px;
+  }
+
+  .buttons-settings {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #player .play .icons li i {
+    font-size: 10px;
+  }
+
+    #player .play .icons li {
+      padding: 0 2px;
+    }
+
+  #player .play .icons li .fa-play-circle {
+    font-size: 18px;
+  }
 }
