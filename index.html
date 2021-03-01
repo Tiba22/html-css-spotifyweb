@@ -87,7 +87,7 @@
             </ul>
           </nav>
           <section class="content-category">
-            <h2>Recently played</h2>
+            <h2 id="recentlyplayed">Recently played</h2>
             <div class="cover">
               <div class="album">
                 <div class="img-hover">
@@ -245,5 +245,10 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    document.getElementById('recentlyplayed').innerHTML = 'Test Javascript Recently Played';
+  </script>
+
 </body>
 </html>
